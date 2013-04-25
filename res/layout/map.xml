@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapLayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/Ivory"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/SayHi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/HelloLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HelloLabel"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@drawable/Black" />
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@drawable/Brown" style=""/>
+
+        <TextView
+            android:id="@+id/UidTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@drawable/SteelBlue"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Functions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Spinner
+            android:id="@+id/PlanSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/testBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="testButClick"
+            android:text="@string/TestButton" />
+
+        <TextView
+            android:id="@+id/displayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/MapFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.google.android.maps.MapView
+            android:id="@+id/MapView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:apiKey="0nBP-9OdMeXA2iC6Qdpy6NjXh6wKMZN9DhaakFQ"
+            android:clickable="true"
+            android:focusable="true"
+            android:keepScreenOn="true" >
+        </com.google.android.maps.MapView>
+    </FrameLayout>
+
+</LinearLayout>
